@@ -18,19 +18,19 @@ h1 {
 h2 {
   font-weight: 700;
   font-size: 14px;
-  margin: 0 0 40px 0;
+  margin: 0 0 32px 0;
 }
 
 h3 {
   font-weight: 700;
   font-size: 22px;
-  margin: 0 0 18px 0;
+  margin: 0 0 10px 0;
 }
 
 h4 {
   font-weight: 700;
   font-size: 16px;
-  margin: 0 0 6px 0;
+  margin: 0 0 4px 0;
 }
 
 p {
@@ -116,12 +116,11 @@ ol {
 /* About me section */
 .about-me {
   max-width: 442px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 /* My projects section */
 .projects {
-  /* max-width: 600px; */
   margin-bottom: 50px;
 }
 
