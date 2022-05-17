@@ -134,6 +134,11 @@ ol {
   color: gray;
 }
 
+.projects-nolinck {
+  font-weight: 400;
+  color: gray;
+}
+
 .projects-linck:hover, .projects-linck:focus, .projects-linck:active {
   color: #FB6D3A;
   font-weight: 700;
