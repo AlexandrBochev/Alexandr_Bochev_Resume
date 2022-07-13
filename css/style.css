@@ -1,6 +1,12 @@
 /* Main style */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -51,9 +57,10 @@ ol {
 }
 
 /* Main container */
+
 .main-wrapper {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
   margin: 40px auto;
   background: #fff;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
@@ -61,18 +68,21 @@ ol {
 
 /* Side bar container */
 .sidebar-wrapper {
-  width: 370px;
-  padding-top: 40px;
+  max-width: 370px;
+  padding: 40px 0;
   background: #1E2939;
 }
 
 .photo {
-  width: 370px;
   margin-bottom: 50px;
 }
 
 .sidebar-block {
   margin: 0 0 50px 40px;
+}
+
+.about-me-sidebar {
+  display: none;
 }
 
 .sidebar-title {
@@ -115,7 +125,6 @@ ol {
 
 /* About me section */
 .about-me {
-  max-width: 442px;
   margin-bottom: 40px;
 }
 
@@ -181,4 +190,92 @@ ol {
 
 .education-facultet {
   font-size: 14px;
+}
+
+/* Media */
+@media (max-width: 1200px) {
+  .main-wrapper {
+    max-width: 970px;
+  }
+
+  .Content-wrapper {
+    padding: 80px 70px;
+  }
+
+  .sidebar-wrapper {
+    max-width: 320px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .main-wrapper {
+    max-width: 750px;
+  }
+
+  .Content-wrapper {
+    padding: 60px 38px;
+  }
+
+  .sidebar-wrapper {
+    max-width: 240px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .main-wrapper {
+    display: inline-block;
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  .Content-wrapper {
+    padding: 40px 15px;
+  }
+
+  .sidebar-wrapper {
+    max-width: none;
+    padding: 40px 0;
+  }
+
+  .sidebar-block {
+    margin: 0 15px 40px 15px;
+  }
+  
+  .about-me-sidebar {
+    display: block;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .about-me-sidebar h1 {
+    font-size: 36px;
+  }
+
+  .about-me-sidebar p {
+    color: #fff;
+  }
+
+  .about-me {
+    display: none;
+  }
+
+  .projects-list {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .projects-dot {
+    height: .2em;
+  }
+
 }
